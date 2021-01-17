@@ -3,7 +3,14 @@ import Link from 'next/link'
 
 export default function NavBarComponent() {
     return(
-        <div className={styles.navbar}>
+        <>
+        <div className={styles.alert}>
+            <a href="https://github.com/JJMarques/hot-news-portugal">
+                Search functionality is only avaliable on development mode. 
+                Click here to access the Github repository
+            </a>
+        </div>
+        <div className={styles.navbar}>    
             <div className={styles.navbarContainer}>
                 <Link href="/">
                     <a><h1>🔥News.<span>pt</span></h1></a>
@@ -14,5 +21,6 @@ export default function NavBarComponent() {
                 </ul>
             </div>
         </div>
+        </>
     )
 }
