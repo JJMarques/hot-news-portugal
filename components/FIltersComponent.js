@@ -1,4 +1,6 @@
 import styles from '../styles/pages/index.module.scss'
+import { FaSearch } from 'react-icons/fa'
+import Link from 'next/link'
 
 export default function FilterComponent({ search, setSearch }) {
     return(
@@ -10,11 +12,15 @@ export default function FilterComponent({ search, setSearch }) {
                     value={search}
                     onChange={e => setSearch(e.target.value)}
                 />
+                <Link href={`/search/${search}`}><a><FaSearch /></a></Link>
             </div>
             <div className={styles.keyWords}>
-                <button value="covid" onClick={e => setSearch(e.target.value)}>Covid</button>
-                <button value="coimbra" onClick={e => setSearch(e.target.value)}>Coimbra</button>
-                
+                <Link href={`/search/${search}`}>
+                    <a value="covid" onClick={e => setSearch(e.target.value)}>Covid</a>
+                </Link>
+                <Link href={`/search/${search}`}>
+                    <a value="coimbra" onClick={e => setSearch(e.target.value)}>Coimbra</a>
+                </Link>
             </div>
         </div>
     )
