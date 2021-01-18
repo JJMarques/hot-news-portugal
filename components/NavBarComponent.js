@@ -4,12 +4,6 @@ import Link from 'next/link'
 export default function NavBarComponent() {
     return(
         <>
-        <div className={styles.alert}>
-            <a href="https://github.com/JJMarques/hot-news-portugal">
-                Search functionality is only avaliable on development mode. 
-                Click here to access the Github repository
-            </a>
-        </div>
         <div className={styles.navbar}>    
             <div className={styles.navbarContainer}>
                 <Link href="/">

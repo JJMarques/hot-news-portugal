@@ -15,11 +15,14 @@ export default function FilterComponent({ search, setSearch }) {
                 <Link href={`/search/${search}`}><a><FaSearch /></a></Link>
             </div>
             <div className={styles.keyWords}>
-                <Link href={`/search/${search}`}>
+                <Link href={'/search/covid'}>
                     <a value="covid" onClick={e => setSearch(e.target.value)}>Covid</a>
                 </Link>
-                <Link href={`/search/${search}`}>
+                <Link href={`/search/coimbra`}>
                     <a value="coimbra" onClick={e => setSearch(e.target.value)}>Coimbra</a>
+                </Link>
+                <Link href={`/search/lousã`}>
+                    <a value="lousã" onClick={e => setSearch(e.target.value)}>Lousã</a>
                 </Link>
             </div>
         </div>
