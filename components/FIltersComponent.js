@@ -6,13 +6,14 @@ export default function FilterComponent({ search, setSearch }) {
     return(
         <div className={styles.filters}>
             <div className={styles.search}>
-                <label>Procurar </label>
-                <input 
-                    type="search" 
-                    value={search}
-                    onChange={e => setSearch(e.target.value)}
-                />
-                <Link href={`/search/${search}`}><a><FaSearch /></a></Link>
+                <label>Procurar 
+                    <input 
+                        type="search" 
+                        value={search}
+                        onChange={e => setSearch(e.target.value)}
+                    />
+                </label>
+                <Link href={`/search/${search}`}><a aria-label={`Procurar por ${search}`}><FaSearch /></a></Link>
             </div>
             <div className={styles.keyWords}>
                 <Link href={'/search/covid'}>

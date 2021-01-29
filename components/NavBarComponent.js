@@ -10,8 +10,8 @@ export default function NavBarComponent() {
                     <a><h1>🔥News.<span>pt</span></h1></a>
                 </Link>
                 <ul> 
-                    <Link href="/sobre"><a><li>Sobre</li></a></Link>
-                    <Link href="/contactos"><a><li>Contactos</li></a></Link>
+                    <Link href="/sobre"><li>Sobre</li></Link>
+                    <Link href="/contactos"><li>Contactos</li></Link>
                 </ul>
             </div>
         </div>
