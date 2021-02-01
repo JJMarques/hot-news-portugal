@@ -20,21 +20,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        
         a {
             text-decoration: none;
             color: rgb(0, 0, 0);
-        }
 
-        ul {
-            display: flex;
-            list-style-type: none;
-
-            li:last-child {
-                margin-left: 20px;
-            }
-
-            li:hover {
+            &:hover {
                 color: #E53E3E;
             }
         }

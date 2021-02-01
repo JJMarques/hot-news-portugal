@@ -22,9 +22,6 @@ export default function FilterComponent({ search, setSearch }) {
                 <Link href={`/search/coimbra`}>
                     <a value="coimbra" onClick={e => setSearch(e.target.value)}>Coimbra</a>
                 </Link>
-                <Link href={`/search/lousã`}>
-                    <a value="lousã" onClick={e => setSearch(e.target.value)}>Lousã</a>
-                </Link>
             </div>
         </div>
     )

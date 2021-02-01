@@ -9,6 +9,7 @@ class MyDocument extends Document {
                     <meta property="og:title" content="Hot news Portugal" />
                     <meta property="og:description" content="Hot news Portugal recolhe e filtra as melhores notícias da imprensa nacional." />
                     <meta property="og:type" content="website"/>
+                    <meta property="og:image" content="/hotnewspt.png"/>
                 </Head>
                 <body>
                     <Main />

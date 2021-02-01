@@ -9,10 +9,15 @@ export default function NavBarComponent() {
                 <Link href="/">
                     <a><h1>🔥News.<span>pt</span></h1></a>
                 </Link>
-                <ul> 
-                    <Link href="/sobre"><li>Sobre</li></Link>
-                    <Link href="/contactos"><li>Contactos</li></Link>
-                </ul>
+                <div style={{ 
+                    width: '140px', 
+                    display: 'flex', 
+                    justifyContent: 'space-between',
+                    alignItems: 'center'
+                }}>
+                    <Link href="/sobre"><a>Sobre</a></Link>
+                    <Link href="/contactos"><a>Contactos</a></Link>
+                </div>
             </div>
         </div>
         </>

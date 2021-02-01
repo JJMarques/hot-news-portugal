@@ -28,3 +28,11 @@ main {
         -moz-box-shadow: -1px 12px 12px 0px rgba(0,0,0,0.26);
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    main {
+        .content {
+            width: 100%;
+        }
+    }
+}

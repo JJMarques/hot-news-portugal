@@ -4,6 +4,7 @@ import { getHeadlineNews } from "../util/util"
 import FilterComponent from '../components/FIltersComponent'
 import NewsDisplayComponent from '../components/NewsDisplayComponent'
 import Head from 'next/head'
+import FooterComponent from '../components/FooterComponent'
 
 export default function Index({ initialNumberOfResults, initialNews }) {
     const [search, setSearch] = useState('')
@@ -20,6 +21,7 @@ export default function Index({ initialNumberOfResults, initialNews }) {
             numberOfResults={initialNumberOfResults}
         />
         <FilterComponent />
+        <FooterComponent />
     </>       
     )
 }
