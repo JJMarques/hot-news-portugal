@@ -6,8 +6,24 @@ import NewsDisplayComponent from '../components/NewsDisplayComponent'
 import Head from 'next/head'
 import FooterComponent from '../components/FooterComponent'
 
-export default function Index({ initialNumberOfResults, initialNews }) {
+export default function Index({ initialNumberOfResults, initialNews, error }) {
     const [search, setSearch] = useState('')
+    
+    if (error) {
+        return(
+            <div
+                style={{ 
+                    height: '100vh',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                    
+                }}
+            >
+                <h1 style={{ textAlign: 'center', color: '#E53E3E' }}>Não foi possível carregar o Website, foi atingido um limite de pedidos à base de dados. 😰</h1>
+            </div>
+        )
+    }
 
     return(
     <>
@@ -28,10 +44,12 @@ export default function Index({ initialNumberOfResults, initialNews }) {
 
 export async function getServerSideProps() {
     const countryNews = await getHeadlineNews()
+    console.log(countryNews)
     return {
         props: {
-            initialNumberOfResults: countryNews.totalResults,
-            initialNews: countryNews.articles
+            error: countryNews.status === 'error' ? true : false,
+            initialNumberOfResults: countryNews.status !== 'error' && countryNews.totalResults,
+            initialNews: countryNews.status !== 'error' && countryNews.articles
         }
     }
 }
