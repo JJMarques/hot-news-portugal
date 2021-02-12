@@ -8,8 +8,8 @@
     justify-content: space-between;
 
     -webkit-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.27);
-    -moz-box-shadow:    0px 2px 7px 0px rgba(50, 50, 50, 0.27);
-    box-shadow:         0px 2px 7px 0px rgba(50, 50, 50, 0.27);    
+    -moz-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.27);
+    box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.27);
 
     .search {
         display: flex;
@@ -29,8 +29,8 @@
             border-radius: 30px;
 
             -webkit-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.27);
-            -moz-box-shadow:    0px 2px 7px 0px rgba(50, 50, 50, 0.27);
-            box-shadow:         0px 2px 7px 0px rgba(50, 50, 50, 0.27);
+            -moz-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.27);
+            box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.27);
         }
 
         a {
@@ -41,7 +41,7 @@
             color: black;
 
             &:hover {
-                color: #E53E3E;
+                color: #e53e3e;
             }
         }
     }
@@ -55,13 +55,13 @@
             font-size: 0.9em;
             border: none;
             color: rgb(255, 255, 255);
-            background: #E53E3E;
+            background: #e53e3e;
             margin-left: 10px;
             cursor: pointer;
             text-decoration: none;
 
             &:hover {
-                background: #a53131
+                background: #a53131;
             }
         }
     }
@@ -69,6 +69,7 @@
 
 @media only screen and (max-width: 1000px) {
     .filters {
+        background: transparent;
         justify-content: center;
 
         h3 {
@@ -79,14 +80,13 @@
             display: none;
         }
     }
-  }
+}
 
-@media only screen and (max-width: 400) {
+@media only screen and (max-width: 400px) {
     .filters {
         flex-direction: column;
-
-        input {
-            width: 10px;
-        }
+        -webkit-box-shadow: 0px 2px 7px 0px rgba(255, 255, 255, 0);
+        -moz-box-shadow: 0px 2px 7px 0px rgba(255, 255, 255, 0);
+        box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0);
     }
 }

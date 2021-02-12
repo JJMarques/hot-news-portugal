@@ -1,17 +1,17 @@
-import '../styles/global.scss'
-import NavBarComponent from "../components/NavBarComponent"
+import '../styles/global.scss';
+import NavBarComponent from '../components/NavBarComponent';
 
 export default function MyApp({ Component, pageProps }) {
-    return(
+    return (
         <>
-        <nav>
-            <NavBarComponent />
-        </nav>
-        <main>
-            <div className="content">
-                <Component {...pageProps} />
-            </div>
-        </main>
+            <nav>
+                <NavBarComponent />
+            </nav>
+            <main>
+                <div className="content">
+                    <Component {...pageProps} />
+                </div>
+            </main>
         </>
-    )
+    );
 }

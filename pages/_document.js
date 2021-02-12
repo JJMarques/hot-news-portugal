@@ -1,23 +1,29 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
     render() {
-        return(
+        return (
             <Html lang="pt">
                 <Head>
-                    <meta name="description" content="Hot news Portugal recolhe e filtra as melhores notícias da imprensa nacional." />
+                    <meta
+                        name="description"
+                        content="Hot news Portugal recolhe e filtra as melhores notícias da imprensa nacional."
+                    />
                     <meta property="og:title" content="Hot news Portugal" />
-                    <meta property="og:description" content="Hot news Portugal recolhe e filtra as melhores notícias da imprensa nacional." />
-                    <meta property="og:type" content="website"/>
-                    <meta property="og:image" content="/hotnewspt.png"/>
+                    <meta
+                        property="og:description"
+                        content="Hot news Portugal recolhe e filtra as melhores notícias da imprensa nacional."
+                    />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:image" content="/hotnewspt.png" />
                 </Head>
                 <body>
                     <Main />
                     <NextScript />
                 </body>
             </Html>
-        )
+        );
     }
 }
 
-export default MyDocument
+export default MyDocument;
